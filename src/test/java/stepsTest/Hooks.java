@@ -90,6 +90,16 @@ public class Hooks {
         }
     }
 
+    public void quitWebDriver(){
+        if(driver != null){
+            driver.quit();
+        }
+    }
+
+    public static WebDriver getDriver(){
+        return driver;
+    }
+
 
 }
 
