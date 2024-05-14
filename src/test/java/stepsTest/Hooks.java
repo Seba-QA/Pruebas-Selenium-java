@@ -70,7 +70,7 @@ public class Hooks {
         if(scenario.isFailed()){
             takeScreenshot();
         }
-        //quitWebDriver();
+        quitWebDriver();
     }
 
     public void takeScreenshot() {
