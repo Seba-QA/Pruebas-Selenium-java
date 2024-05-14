@@ -14,3 +14,12 @@ Feature: Pruebas en pagina web The-internet
     Scenario: Ingreso a AB Testing y valido la pagina redirigida
         Given Ingreso a AB Testing
         Then Valido que se redirige correctamente
+
+    @AddRemove
+    Scenario: Ingreso AddRemove Element y valido funcionalidad
+        Given Ingreso a AddRemove Element
+        When Selecciono boton Add Element
+        And Valido que se agregue el boton Delete
+        When Selecciono el boton Delete
+        And Valido que se elimine el boton Delete
+        Then Valido que ambos botones funcionen correctamamente

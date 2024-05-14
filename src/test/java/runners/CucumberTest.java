@@ -11,7 +11,7 @@ import io.cucumber.core.options.Constants;
 @Suite
 @IncludeEngines("cucumber")
 @SelectClasspathResource("features")
-@ConfigurationParameter(key = Constants.FILTER_TAGS_PROPERTY_NAME, value = "@ABTesting")
+@ConfigurationParameter(key = Constants.FILTER_TAGS_PROPERTY_NAME, value = "@AddRemove")
 @ConfigurationParameter(key = GLUE_PROPERTY_NAME, value = "stepsTest")
 public class CucumberTest {
 }

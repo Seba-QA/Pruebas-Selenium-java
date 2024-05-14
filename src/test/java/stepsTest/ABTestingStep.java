@@ -13,7 +13,7 @@ public class ABTestingStep {
     ABTesting ab = new ABTesting(driver);
 
     @Given ("Ingreso a AB Testing")
-    public void redirect(){
+    public void redirectAB(){
         nav.navigateTo();
         ab.redirect();
     }

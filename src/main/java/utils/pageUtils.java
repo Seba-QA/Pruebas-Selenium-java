@@ -47,9 +47,11 @@ public class pageUtils {
     protected boolean isVisible(WebElement WebElement, int seconds){
         try {
             WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(seconds));
+            wait.until(ExpectedConditions.visibilityOf(WebElement));
             return true;
         } catch (NoSuchElementException e) {
             logWarn("Elemento no visible");
+            return false;
         }catch (TimeoutException e) {
             logWarn("Timeout");
         }catch (Exception e) {
