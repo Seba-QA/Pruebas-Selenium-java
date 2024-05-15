@@ -23,3 +23,9 @@ Feature: Pruebas en pagina web The-internet
         When Selecciono el boton Delete
         And Valido que se elimine el boton Delete
         Then Valido que ambos botones funcionen correctamamente
+
+    @BasicAuth
+    Scenario: Ingreso a Basic Auth e ingreso credenciales
+        Given Ingreso a Basic Auth
+        When Ingreso el usuario y contraseña
+        Then Valido el correcto login
