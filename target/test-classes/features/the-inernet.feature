@@ -26,6 +26,5 @@ Feature: Pruebas en pagina web The-internet
 
     @BasicAuth
     Scenario: Ingreso a Basic Auth e ingreso credenciales
-        Given Ingreso a Basic Auth
-        When Ingreso el usuario y contraseña
+        Given Ingreso a Basic Auth e ingreso credenciales
         Then Valido el correcto login

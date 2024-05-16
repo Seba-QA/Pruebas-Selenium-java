@@ -2,24 +2,21 @@ package stepsTest;
 
 import org.openqa.selenium.WebDriver;
 import io.cucumber.java.en.Given;
-import io.cucumber.java.en.When;
+import io.cucumber.java.en.Then;
 
-import pages.enterPage;
 import pages.BasicAuth;
 
 public class BasicAuthStep {
     private WebDriver driver = Hooks.getDriver();
-    enterPage nav = new enterPage(driver);
     BasicAuth ba = new BasicAuth(driver);
 
-    @Given ("Ingreso a Basic Auth")
+    @Given ("Ingreso a Basic Auth e ingreso credenciales")
     public void redirectBasicAuth(){
-        nav.navigateTo();
         ba.redirectBasicAuth();
     }
 
-    @When ("Ingreso el usuario y contraseña")
-    public void auth(){
-        ba.auth();
+    @Then ("Valido el correcto login")
+    public void validateAuth(){
+        ba.validateAuth();
     }
 }

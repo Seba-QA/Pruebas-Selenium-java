@@ -12,19 +12,28 @@ public class BasicAuth extends pageUtils{
     }
 
     /*--Variables a utilizar--*/
-    String auth = "admin";
+    String authUser = "admin";
+    String authPass = "admin";
+    String validate = "Congratulations! You must have the proper credentials.";
     /*--Fin variables--*/
 
     /*--Elementos a utilizar*/
-    @FindBy(xpath = "//a[@href='/basic_auth']") WebElement btnBasicAuth;
+    @FindBy(xpath = "//p[contains(text(), 'Congratulations! You must have the proper credentials.')]") WebElement text;
     /*--Fin elementos--*/
 
     public void redirectBasicAuth(){
-        waitFor(2);
-        btnBasicAuth.click();
+        driver.get("https://" + authUser + ":" + authPass + "@" + "the-internet.herokuapp.com/basic_auth");
     }
 
-    public void auth(){
+    public void validateAuth(){
+        waitFor(2);
+        String valText = text.getText();
+        boolean val = valText.contains(validate);
+        if(!val){
+            logWarn("Hubo un problema al iniciar la sesion");
 
+        }else{
+            log("La sesion se inicio con exito");
+        }
     }
 }
