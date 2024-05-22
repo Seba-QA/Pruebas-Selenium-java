@@ -28,3 +28,8 @@ Feature: Pruebas en pagina web The-internet
     Scenario: Ingreso a Basic Auth e ingreso credenciales
         Given Ingreso a Basic Auth e ingreso credenciales
         Then Valido el correcto login
+
+    @BrokenImages
+    Scenario: Ingreo a Broken Images y valido las imagenes
+        Given Ingreso a Broken Images
+        Then Valido la imagenes
