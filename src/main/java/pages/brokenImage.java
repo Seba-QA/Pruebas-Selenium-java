@@ -21,12 +21,12 @@ public class brokenImage extends pageUtils{
     /*--Fin variables--*/
 
     /*--Elementos a utilizar--*/
-    @FindBy(xpath = "//a[@href=\"/broken_images\"]") WebElement brokenImage;
+    @FindBy(xpath = "//a[@href=\"/broken_images\"]") WebElement btnBrokenImage;
     /*--Fin Elementos--*/
 
     public void redirectBrokenImage(){
         waitFor(2);
-        brokenImage.click();
+        btnBrokenImage.click();
     }
 
     public void validateImage(){

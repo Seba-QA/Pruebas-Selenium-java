@@ -33,3 +33,9 @@ Feature: Pruebas en pagina web The-internet
     Scenario: Ingreo a Broken Images y valido las imagenes
         Given Ingreso a Broken Images
         Then Valido la imagenes
+
+    @Checkboxes
+    Scenario: Ingreso a Checkboxes y valido los elementos checkbox
+        Given Ingreso a Checkboxes
+        Then Valido las acciones de los checkbox
+

@@ -11,7 +11,7 @@ import io.cucumber.core.options.Constants;
 @Suite
 @IncludeEngines("cucumber")
 @SelectClasspathResource("features")
-@ConfigurationParameter(key = Constants.FILTER_TAGS_PROPERTY_NAME, value = "@BrokenImages")
+@ConfigurationParameter(key = Constants.FILTER_TAGS_PROPERTY_NAME, value = "@Checkboxes")
 @ConfigurationParameter(key = GLUE_PROPERTY_NAME, value = "stepsTest")
 public class CucumberTest {
 }
