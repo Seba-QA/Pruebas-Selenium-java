@@ -39,3 +39,8 @@ Feature: Pruebas en pagina web The-internet
         Given Ingreso a Checkboxes
         Then Valido las acciones de los checkbox
 
+    @ContextMenu
+    Scenario: Ingreso a Context menu y valido el despliegue de menu
+        Given Ingreso a Context menu
+        When Interactuo con recuadro
+        Then Valido el despliegue del menu
