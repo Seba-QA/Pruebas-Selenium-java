@@ -10,11 +10,13 @@ Feature: Pruebas en pagina web The-internet
     Scenario: ingreso a la pagina web
         Then Valido el ingreso correcto
 
+    #CP-001
     @ABTesting
     Scenario: Ingreso a AB Testing y valido la pagina redirigida
         Given Ingreso a AB Testing
         Then Valido que se redirige correctamente
 
+    #CP-002
     @AddRemove
     Scenario: Ingreso AddRemove Element y valido funcionalidad
         Given Ingreso a AddRemove Element
@@ -23,28 +25,33 @@ Feature: Pruebas en pagina web The-internet
         When Selecciono el boton Delete
         And Valido que se elimine el boton Delete
         Then Valido que ambos botones funcionen correctamamente
-
+    
+    #CP-003
     @BasicAuth
     Scenario: Ingreso a Basic Auth e ingreso credenciales
         Given Ingreso a Basic Auth e ingreso credenciales
         Then Valido el correcto login
 
+    #CP-004
     @BrokenImages
     Scenario: Ingreo a Broken Images y valido las imagenes
         Given Ingreso a Broken Images
         Then Valido la imagenes
 
+    #CP-005
     @Checkboxes
     Scenario: Ingreso a Checkboxes y valido los elementos checkbox
         Given Ingreso a Checkboxes
         Then Valido las acciones de los checkbox
 
+    #CP-006
     @ContextMenu
     Scenario: Ingreso a Context menu y valido el despliegue de menu
         Given Ingreso a Context menu
         When Interactuo con recuadro
         Then Valido el despliegue del menu
 
+    #CP-009
     @FileDorwnloader
     Scenario: Ingreso a File downloader y descargo los archivos
         Given Ingreso a File downloader
