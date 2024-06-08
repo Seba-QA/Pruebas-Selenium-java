@@ -44,3 +44,9 @@ Feature: Pruebas en pagina web The-internet
         Given Ingreso a Context menu
         When Interactuo con recuadro
         Then Valido el despliegue del menu
+
+    @FileDorwnloader
+    Scenario: Ingreso a File downloader y descargo los archivos
+        Given Ingreso a File downloader
+        When Descargo los archivos en la pagina
+        Then valido la descarga de los archivos
