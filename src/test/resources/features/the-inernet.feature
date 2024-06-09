@@ -57,3 +57,13 @@ Feature: Pruebas en pagina web The-internet
         Given Ingreso a File downloader
         When Descargo los archivos en la pagina
         Then valido la descarga de los archivos
+
+    #CP-007
+    @DragAndDrop
+    Scenario: Inghreso a Drag and drop y muevo los recuadros
+        Given Ingreso a Drag and drop
+        When Muevo recuadro A al lugar del recuedro B y a su posicion original
+        And Valido que ambos movimientos del recuadro A
+        And Muevo recuadro B al lugar del recuedro A y a su posicion original
+        And Valido que ambos movimientos del recuadro B
+        Then Valido que todos los movimientos se hagan correctamente
