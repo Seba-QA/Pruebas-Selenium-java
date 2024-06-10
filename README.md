@@ -9,7 +9,7 @@ Para el desarrollo de las pruebas, he utilizado un proyecto Maven con el lenguaj
 ## Página Web Probada
 La página web que he utilizado para llevar a cabo las pruebas automatizadas es: [the-internet.herokuapp.com](https://the-internet.herokuapp.com/)
 
-##Proyecto en Jira
+Proyecto en Jira
 El nombre del proyecto en Jira Software es "Portafolios Automatización" y se puede acceder al mismo a través del siguiente enlace: https://portfolioautomation.atlassian.net/jira/software/projects/PAU/boards/1
 
 ## Enlaces Adicionales
