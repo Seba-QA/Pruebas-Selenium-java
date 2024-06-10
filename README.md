@@ -7,9 +7,9 @@ El propósito de este proyecto es demostrar mis conocimientos en pruebas automat
 Para el desarrollo de las pruebas, he utilizado un proyecto Maven con el lenguaje de programación Java. He empleado el entorno de Selenium, la herramienta de Cucumber, el lenguaje específico Gherkin y la herramienta de gestión de proyectos Jira Software.
 
 ## Página Web Probada
-La página web que he utilizado para llevar a cabo las pruebas automatizadas es: [the-internet.herokuapp.com](https://the-internet.herokuapp.com/)
+La página web que he utilizado para llevar a cabo las pruebas automatizadas es: [the-internet.herokuapp.com](https://the-internet.herokuapp.com/).
 
-Proyecto en Jira
+## Proyecto en Jira
 El nombre del proyecto en Jira Software es "Portafolios Automatización" y se puede acceder al mismo a través del siguiente enlace: https://portfolioautomation.atlassian.net/jira/software/projects/PAU/boards/1
 
 ## Enlaces Adicionales
