@@ -1,6 +1,5 @@
 package pages;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -51,17 +50,20 @@ public class dropdown extends pageUtils{
         dropdownSelect.selectByVisibleText("Option 1");
         waitFor(1);
         WebElement option = dropdownSelect.getFirstSelectedOption();
-        if (!option.getText().equals("Option 1")) {
-            throw new AssertionError("La opcion 1 no se selecciono correctamente");
-        }else{
+        if (option.getText().equals("Option 1")) {
             waitFor(3);
             dropdownSelect.selectByVisibleText("Option 2");
-            if (!option.getText().equals("Option 2")){
-                throw new AssertionError("La opcion 2 no se selecciono correctamente");
-            }else{
+            //Esta entrando al if, ya que, por alguna rezon la validacion devuelve un TRUE
+            waitFor(3);
+            option = dropdownSelect.getFirstSelectedOption();
+            if (option.getText().equals("Option 2")){
                 waitFor(1);
                 log("Se pueden seleccionar las 2 opciones correctamente");
+            }else{
+                throw new AssertionError("La opcion 2 no se selecciono correctamente");
             }
+        }else{
+            throw new AssertionError("La opcion 1 no se selecciono correctamente");
         }
     }
 }
