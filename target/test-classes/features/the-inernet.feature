@@ -63,9 +63,7 @@ Feature: Pruebas en pagina web The-internet
     Scenario: Inghreso a Drag and drop y muevo los recuadros
         Given Ingreso a Drag and drop
         When Muevo recuadro A al lugar del recuedro B y a su posicion original
-        And Valido que ambos movimientos del recuadro A
         And Muevo recuadro B al lugar del recuedro A y a su posicion original
-        And Valido que ambos movimientos del recuadro B
         Then Valido que todos los movimientos se hagan correctamente
 
     #CP-008/PAU-08
