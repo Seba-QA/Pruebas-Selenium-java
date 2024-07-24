@@ -51,7 +51,5 @@ La estructura de este proyecto está organizada de la siguiente manera:
 - **Archivo de configuración:**
   - `Pruebas-Selenium-java/pom.xml`: Archivo de configuración de Maven que define las dependencias y configuraciones del proyecto.
 
-## Contribuciones
 
-Las contribuciones al proyecto son bienvenidas. Por favor, sigue el flujo de trabajo de pull requests para enviar cambios y mejoras.
 
